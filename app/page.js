@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useState } from 'react';
+import Image from 'next/image'
 export default function Home() {
 
 
@@ -33,7 +34,7 @@ export default function Home() {
 
         <h1 className=" text-white text-6xl font-extrabold pt-16 pb-4 underline max-md:text-2xl">Welcome to Ath<span className='text-green-500'>Care</span></h1>
         <div className='flex justify-center mt-11'>
-          <img className=' w-44 rounded-full max-md:w-20' src="image/dog.gif" alt="dog" />
+          <Image className='rounded-full max-md:w-20' width={176} height={176} src="/image/dog.gif" alt="dog" />
         </div>
 
           <div className='text-white text-2xl mt-3 font-bold'>
@@ -70,7 +71,7 @@ export default function Home() {
        
 
   <div id="card-1" className={`max-w-sm max-md:ml-0 max-md:mr-0 bg-white border ml-20 mr-8 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition-transform duration-500 perspective-1000 ${activeCard === 1 ? 'hover:rotate-y-0' : 'rotate-y-20'} hover:rotate-y-0`}>
-    <img className="rounded-t-lg" src="image/donate(1).gif" alt="Donate Money" />
+    <Image className="rounded-t-lg" src="/image/donate(1).gif" width={500} height={500} alt="Donate Money" />
     <div className="p-5">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Donate Money</h5>
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Your support provides medical care, food, and shelter to animals in need. Every contribution makes a difference.</p>
@@ -86,7 +87,7 @@ export default function Home() {
 
   <div className={`max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition-transform duration-500 perspective-1000 ${activeCard === 2 ? 'hover:rotate-y-0' : 'rotate-y-20'} hover:rotate-y-0`}
         id="card-2">
-    <img className="rounded-t-lg" src="image/charity.gif" alt="Donate Food" />
+    <Image className="rounded-t-lg" src="/image/charity.gif" width={500} height={500} alt="Donate Food" />
     <div className="p-5">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Donate Food</h5>
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Contributing food ensures our animals are always well-fed. Your generosity provides nourishment, making a significant difference!</p>
@@ -102,7 +103,7 @@ export default function Home() {
 
   <div   className={`max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition-transform duration-500 perspective-1000 ${activeCard === 3 ? 'hover:rotate-y-0' : 'rotate-y-20'} hover:rotate-y-0`}
         id="card-3">
-    <img className="rounded-t-lg" src="image/donate.gif" alt="Donate Shelter" />
+    <Image className="rounded-t-lg" src="/image/donate.gif" width={500} height={500} alt="Donate Shelter" />
     <div className="p-5">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Donate Shelter</h5>
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Your support provides medical care, food, and shelter to animals in need. Every contribution makes a difference.</p>

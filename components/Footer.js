@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ const Footer = () => {
               
           <div className='flex justify-between w-1/2 font-serif'>
               <div className='flex'>
-                  <div><img className='rounded-full p-1 w-11' src="image/pic1.png" alt="Logo" width="50px" /></div>
+                  <div><Image className='rounded-full p-1' width={50} height={50} src="/image/pic1.png" alt="Logo" /></div>
                   <div className='font-bold text-xs text-white relative top-2 pl-1 max-md:hidden'>
                       <span className='text-white'></span>
                       <span>Ath</span>
@@ -25,10 +26,10 @@ const Footer = () => {
               <div className='flex gap-4'>
                   <div className='font-bold text-white relative top-3 max-sm:text-[10px] max-sm:top-1'>Follow Us</div>
                   <div className='flex gap-4 relative top-2'>
-                      <a href="https://www.linkedin.com/in/athervi-singh/"><img className='rounded-full w-8' src="image/lin.gif" alt="" /></a>
-                      <a href="https://x.com/AtherviSingh"><img className='rounded-full w-8' src="image/X.gif" alt="" /></a>
-                      <a href="https://www.youtube.com/@athervisingh"><img className='rounded-full w-8' src="image/Utube.gif" alt="" /></a>
-                      <a href="https://www.instagram.com/athervisingh001/"><img className='rounded-full w-8' src="image/insta.gif" alt="" /></a>
+                      <a href="https://www.linkedin.com/in/athervi-singh/"><Image className='rounded-full' width={32} height={32} src="/image/lin.gif" alt="" /></a>
+                      <a href="https://x.com/AtherviSingh"><Image className='rounded-full' width={32} height={32} src="/image/X.gif" alt="" /></a>
+                      <a href="https://www.youtube.com/@athervisingh"><Image className='rounded-full' width={32} height={32} src="/image/Utube.gif" alt="" /></a>
+                      <a href="https://www.instagram.com/athervisingh001/"><Image className='rounded-full' width={32} height={32} src="/image/insta.gif" alt="" /></a>
                   </div>
               </div>
 

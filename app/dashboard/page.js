@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify'
+import Image from 'next/image';
 
 const Dashboard = () => {
   const { data: session } = useSession()
@@ -25,7 +26,7 @@ const Dashboard = () => {
     router.push('/login')
     }
      getData()
-}, [router,session])
+}, [router,session ,getData])
 
 
   const getData = async () => {
@@ -68,7 +69,7 @@ const Dashboard = () => {
   pauseOnHover
   theme="light"
 />
-<img src="image/dog.png" alt="dog" className='fixed pb-14 w-36 invert max-sm:w-20 bottom-0' />
+<Image src="/image/dog.png" width={144} height={144} alt="dog" className='fixed pb-14 invert max-sm:w-20 bottom-0' />
       <div className='text-white font-serif'>
         <div className='pt-20 text-center font-extrabold text-4xl max-sm:text-xl'>Welcome to your Dashboard</div>
         <form className="w-1/3 mx-auto mt-12 max-lg:w-1/2 max-md:w-[80vw]" action={handleSubmit}>

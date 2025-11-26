@@ -5,7 +5,7 @@ const UserSchema = new Schema({
   email: {type:String,required:true},
   name: {type:String},
   username: {type:String,required:true},
-  profilePic: {type:String,default:"/home/codian/Desktop/next/chai/public/image/animal.webp"},
+  profilePic: {type:String,default:"/image/animal.webp"},
   coverPic: {type:String},
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },

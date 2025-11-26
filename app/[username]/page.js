@@ -26,6 +26,6 @@ export default Username
 export async function generateMetadata({ params }) {
   return {
     title: `Welcome ${params.username} - Complete Your Donation`,
-    description: "Make a difference with your donation. Enter your payment details to support AthCare’s mission and help animals in need.",
+    description: "Make a difference with your donation. Enter your payment details to support AthCare&apos;s mission and help animals in need.",
 }
 };

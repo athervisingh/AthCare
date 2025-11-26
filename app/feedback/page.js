@@ -45,7 +45,7 @@ const Feedback = () => {
      
 
       <h1 className='pt-20 p-5 pb-4 font-bold underline text-2xl'>Contact US</h1>
-      <p className='ml-10'>We'd love to hear from you! If you have any questions, suggestions, or need assistance with <b>AthCare</b>, please feel free to reach out to us.</p>
+      <p className='ml-10'>We&apos;d love to hear from you! If you have any questions, suggestions, or need assistance with <b>AthCare</b>, please feel free to reach out to us.</p>
 
       <div className='ml-20 mt-5 max-md:ml-5'>
         <h1 className='text-xl underline'>Contact Form</h1>

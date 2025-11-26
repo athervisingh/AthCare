@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
 
         <div className='flex mt-6 border border-gray-400 w-1/3 justify-between border-opacity-35 ml-5 max-2xl:h-[30vh] max-2xl:overflow-scroll max-md:flex-col max-2xl:pt-8 max-md:w-[70vw]'>
           <div className='max-2xl:h-[218] max-md:flex max-md:justify-center'>
-            <img src="image/athervi.png" className='w-36 bg-gray-400 pt-3 mt-12 ml-4 rounded-full border border-white max-2xl:w-16 max-2xl:mt-6' alt="" />
+            <Image src="/image/athervi.png" className='bg-gray-400 pt-3 mt-12 ml-4 rounded-full border border-white max-2xl:w-16 max-2xl:mt-6' width={144} height={144} alt="" />
           </div>
 
           <div className='w-2/3 p-14 max-2xl:p-5  max-2xl:text-xs max-md:w-full '>
@@ -75,7 +76,7 @@ const About = () => {
                       <div className='flex gap-2 mb-1'>
                             <span className="block w-2 h-2 ml-2 bg-white rounded-full mt-2"></span>
               <dt className='font-medium text-[18px] ml-5'>Reliable Support:</dt>
-              <dd className='mt-1'>We're here to help with any questions or concerns. Our dedicated support team is committed to ensuring your experience with AthCare is positive and fulfilling.</dd>
+              <dd className='mt-1'>We&apos;re here to help with any questions or concerns. Our dedicated support team is committed to ensuring your experience with AthCare is positive and fulfilling.</dd>
             </div>
 
           </dl>

@@ -7,7 +7,7 @@ import SessionWrapper from "@/components/SessionWrapper";
 
 export const metadata = {
   title: "AthCare: Be the Voice for Animals",
-  description: "AthCare is a compassionate initiative dedicated to supporting animals and birds in need. The project focuses on providing direct aid through a team of dedicated volunteers and professionals who work tirelessly to ensure the well-being of these creatures. AthCare's mission is to create a world where every animal receives the care and attention they deserve, without relying on third-party organizations. Whether it's rescuing, rehabilitating, or simply offering a helping hand, AthCare stands as a beacon of hope for our furry and feathered friends.",
+  description: "AthCare is a compassionate initiative dedicated to supporting animals and birds in need. The project focuses on providing direct aid through a team of dedicated volunteers and professionals who work tirelessly to ensure the well-being of these creatures. AthCare&apos;s mission is to create a world where every animal receives the care and attention they deserve, without relying on third-party organizations. Whether it&apos;s rescuing, rehabilitating, or simply offering a helping hand, AthCare stands as a beacon of hope for our furry and feathered friends.",
 };
 
 export default function RootLayout({ children }) {

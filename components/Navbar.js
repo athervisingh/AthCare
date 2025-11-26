@@ -2,6 +2,7 @@
 import { useSession, signIn, signOut } from "next-auth/react"
 import React,{useState} from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
 
 const Navbar = () => {
   const { data: session } = useSession()
@@ -18,7 +19,7 @@ const Navbar = () => {
    
 <Link href='/'>
     <div className='flex text-white font-bold items-center'>
-        <img src="image/pic1.png" className='w-14 p-2 rounded-full' alt="pic" />  
+        <Image src="/image/pic1.png" width={56} height={56} className='p-2 rounded-full' alt="pic" />  
         <div className='text-xl font-serif' >Ath<span className='text-green-400'>Care</span>
   
         </div>
