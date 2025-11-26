@@ -25,7 +25,7 @@ const PaymentPage = ({ username }) => {
 
   useEffect(() => {
     getData()
-  }, [getData])
+  }, [])
 
   useEffect(() => {
     if (searchParams.get("paymentdone") == "true") {
@@ -120,7 +120,7 @@ const PaymentPage = ({ username }) => {
             <h1 className='text-4xl font-extrabold text-center mt-4 max-md:text-2xl'>AthCare: Every Life Matters</h1>
             <p className='font-semibold mt-1 text-center max-md:text-sm'>Creating a safe space and forever home for rescued animals!</p>
             <p className='font-semibold text-center max-md:text-sm'>Your kindness is a warm blanket for those in need</p>
-            <Image src="image/protect.png" width={160} height={160} className='max-md:w-16 bg-white rounded-full opacity-45 mx-auto mt-4' alt="" />
+            <Image src="/image/protect.png" width={160} height={160} className='max-md:w-16 bg-white rounded-full opacity-45 mx-auto mt-4' alt="" />
           </div>
 
           {currentUser.coverPic === "" ? <Image src="/image/top.webp" fill style={{ objectFit: 'cover' }} className="w-full h-[60vh]" alt="top" /> : <Image src={currentUser.coverPic} fill style={{ objectFit: 'cover' }} className="w-full h-[60vh]" alt="top" />}
